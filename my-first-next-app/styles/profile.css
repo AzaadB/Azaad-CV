@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300&family=Inter:wght@500&display=swap');
+
+body {/*Styling the body of the home, about, contact, and project pages*/
+  background-color: #ff0000;
+  color: rgb(8, 8, 8);
+  font-family: 'Inter';
+  font-weight: bold;
+}
+a {
+  color: solid rgb(49, 246, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+nav {
+  margin: 10px auto 80px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-bottom: 1px solid #ddd;
+}
+nav a {
+  margin-left: 12px;
+}
+nav .profile {
+  margin-right: auto;
+  color: rgb(79, 251, 0);
+}
+footer {
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 60px;
+  color: rgb(0, 231, 219);
+  border-top: 1px solid #eaeaea;
+}
