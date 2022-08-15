@@ -1,0 +1,10 @@
+.title {
+    color: rgb(85, 233, 0);
+    padding-bottom: 20px;
+    text-align: center;
+  }
+  .text{/*styling the text*/
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding-bottom: 20px;
+  }

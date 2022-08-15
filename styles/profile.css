@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Aleo:wght@300&family=Inter:wght@500&display=swap');
+
+body {/*Styling the body of the home, about, contact, and project pages*/
+  color: rgb(8, 8, 8);
+  font-family: 'Inter';
+  font-weight: bold;
+  background: #e96443;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #904e95, #e96443);  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to right, #904e95, #e96443); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+a {
+  color: rgb(247, 119, 0);
+  text-decoration: none;
+  font-weight: bold;
+}
+.content {
+  max-width: 960px;
+  margin: 0 auto;
+}
+h1{
+  text-align: center;
+  color:rgb(27, 19, 19);
+}
+nav {
+  margin: 10px auto 80px;
+  padding: 10px 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  border-bottom: 1px solid #ddd;
+}
+nav a {
+  margin-left: 12px;
+  color: rgb(0, 0, 0);
+}
+nav .profile {
+  margin-right: auto;
+  color: rgb(0, 0, 0);
+}
+footer {
+  display: block;
+  text-align: center;
+  padding: 30px 0;
+  margin-top: 60px;
+  color: rgb(0, 231, 219);
+  border-top: 1px solid #eaeaea;
+}
+
+p{
+  color: rgb(0, 0, 0);
+}
