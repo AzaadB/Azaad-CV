@@ -1,4 +1,5 @@
 import "../styles/profile.css";
+import Head from "next/head"; //importing head module from next//
 import Script from "next/script"; //importing Script component from next.js
 import Layout from "../components/Layout";
 
@@ -6,7 +7,8 @@ export default function App({ Component, pageProps }) {
   //exporting a function//
   return (
     <>
-      {/*creating script component (line 10) Inside the first script component(line 10),
+    <Head>
+        {/*creating script component (line 10) Inside the first script component(line 10),
       we are passing a strategy(line 11),and a source of the script(line 14) */}
       <Script
         strategy="lazyOnLoad"
@@ -31,6 +33,7 @@ export default function App({ Component, pageProps }) {
       <Layout>
       <Component {...pageProps} />
       </Layout>
+    </Head>
     </>
   );
 }
