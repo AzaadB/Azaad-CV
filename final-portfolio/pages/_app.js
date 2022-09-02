@@ -22,7 +22,7 @@ export default function App({ Component, pageProps }) {
 
       <Script strategy="lazyOnLoad">
         {`window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag(${process.env.ANALYTICS_KEY}){dataLayer.push(${process.env.ANALYTICS_KEY});}
         gtag('js', new Date());
     
         gtag('config', '${process.env.ANALYTICS_KEY}');

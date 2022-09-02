@@ -20,16 +20,15 @@ export default function App({ Component, pageProps }) {
     intead of a source we add code inside this script which os inside brackets*/}
 
       <Script strategy="lazyOnLoad">
-        
         {`window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
+        function gtag(${process.env.ANALYTICS_KEY}){dataLayer.push(${process.env.ANALYTICS_KEY});}
         gtag('js', new Date());
     
         gtag('config', '${process.env.ANALYTICS_KEY}');
 `}
       </Script>
       <Layout>
-      <Component {...pageProps} />
+        <Component {...pageProps} />
       </Layout>
     </>
   );
