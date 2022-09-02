@@ -25,7 +25,7 @@ export default function App({ Component, pageProps }) {
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
     
-        gtag('config', 'G-527ZWFHW3B');
+        gtag('config', '${process.env.ANALYTICS_KEY}');
 `}
       </Script>
       <Layout>
