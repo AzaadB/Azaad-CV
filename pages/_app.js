@@ -21,10 +21,12 @@ export default function App({ Component, pageProps }) {
 
       <Script strategy="lazyOnLoad">
         {`window.dataLayer = window.dataLayer || [];
-        function gtag(${process.env.ANALYTICS_KEY}){dataLayer.push(${process.env.ANALYTICS_KEY});}
+        function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
     
-        gtag('config', '${process.env.ANALYTICS_KEY}');
+        gtag('config', '${process.env.ANALYTICS_KEY}'),  {
+          page_path: window.location.pathname,
+        });
 `}
       </Script>
       <Layout>
