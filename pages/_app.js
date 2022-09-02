@@ -12,7 +12,7 @@ export default function App({ Component, pageProps }) {
         strategy="lazyOnLoad"
         /*The strategy we use for analytic tags,
       is called lazyOnLoad (line 23)*/
-        src={`https://www.googletagmanager.com/gtag/js?id=G-527ZWFHW3B`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.ANALYTICS_KEY}`}
       />
       {/*The source is the google tag obtained from google analytics(line 14)*/}
 
