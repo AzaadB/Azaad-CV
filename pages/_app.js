@@ -8,27 +8,19 @@ export default function App({ Component, pageProps }) {
     <>
       {/*creating script component (line 10) Inside the first script component(line 10),
       we are passing a strategy(line 11),and a source of the script(line 14) */}
+
       <Script
-        strategy="lazyOnLoad"
-        /*The strategy we use for analytic tags,
-      is called lazyOnLoad (line 23)*/
-        src={`https://www.googletagmanager.com/gtag/js?id=${process.env.ANALYTICS_KEY}`}
-      />
-      {/*The source is the google tag obtained from google analytics(line 14)*/}
-
-      {/*The second script(line 21) is similar to the first on except,
-    intead of a source we add code inside this script which os inside brackets*/}
-
-      <Script strategy="lazyOnLoad">
+        async
+        src="https://www.googletagmanager.com/gtag/js?id=G-527ZWFHW3B"
+      ></Script>
+      <Script id="google-analytics">
         {`window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-    
-        gtag('config', '${process.env.ANALYTICS_KEY}'),  {
-          page_path: window.location.pathname,
-        });
-`}
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-527ZWFHW3B');`}
       </Script>
+
       <Layout>
         <Component {...pageProps} />
       </Layout>
